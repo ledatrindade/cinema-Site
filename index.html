@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cinema Boa Vista</title>
+</head>
+<body>
+    <main>
+        <h1>Bem-vindo ao Cinema Boa Vista!</h1>
+        <form id="cinemaForm">
+            <div class="film">
+                <label>Filme:</label>
+                <select id="filmSelect" name="film" onchange="sendData()">
+                    <option value="eAssimQueAcaba">É Assim Que Acaba</option>
+                    <option value="deadpoolEWolverine">Deadpool e Wolverine</option>
+                    <option value="meumalvadofavorito3">Meu Malvado Favorito 3</option>
+                </select>
+            </div>
+            <div class="horario">
+                <label>Horário:</label>
+                <select id="horarioSelect" name="horario" onchange="sendData()">
+                    <option value="pm1">13:40H</option>
+                    <option value="pm2">14:30H</option>
+                    <option value="pm3">15:10H</option>
+                </select>
+            </div>
+            <div class="cadeira">
+                <label>Cadeira:</label>
+                <select id="cadeiraSelect" name="cadeira" onchange="sendData()">
+                    <option value="A1">A1</option>
+                    <option value="B2">B2</option>
+                    <option value="C3">C3</option>
+                </select>
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
